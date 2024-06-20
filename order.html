@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brody Arbon</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+</head>
+<body>
+    <header>
+        <img src="android-chrome-192x192.png" alt="Logo" />
+        <h1>Brody Arbon</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Order Page</h2>
+            <h3>Place your order here</h3>
+            <article>
+
+                <form action="/order" method="post">
+                    <fieldset id="required">
+                        <legend>Please input the Shipping Information</legend>
+                        <p>
+
+                            <label for="shippingName">
+                                First and Last name here:
+
+                                <span class="required"></span>
+                                <input type="text"
+                                       name="shippingName"
+                                       size="25"
+                                       maxlength="75"
+                                       required
+                                       placeholder="John Doe"
+                                       autofocus="" />
+
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="useremail">
+                                Email here:
+
+                                <span class="required"></span>
+                                <input type="email"
+                                       name="useremail"
+                                       required
+                                       placeholder="example123@html.org" />
+                            </label>
+                        </p>
+
+
+                        <p>
+                            <label for="address">
+                                Address information here:
+
+                                <span class="required"></span>
+                                <textarea name="address"
+                                          required
+                                          maxlength="100"
+                                          minlength="3"
+                                          placeholder="123 example drive"></textarea>
+
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="shipMessage">
+                                Shipping Instuctions here:
+
+                                <textarea name="shipMessage"
+                                          maxlength="500"
+                                          minlength="3"
+                                          placeholder="If any shipping instrucitons are needed, put them here"></textarea>
+
+                            </label>
+                        </p>
+
+
+                    </fieldset>
+
+
+
+
+                    <fieldset>
+                        <legend>Due to supply issues, only one product may be chosen</legend>
+                        <body>
+                            <table>
+                                <caption><strong>Product Selection</strong></caption>
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AGYM</td>
+                                        <td>
+                                            <input type="radio" name="product" value="Spinning Cat Scratcher Ball" checked></label>
+                                            Spinning Cat Scratcher Ball
+                                        </td>
+                                        <td>52.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jasonwell</td>
+                                        <td>
+                                            <input type="radio" name="product" value="Foldable Dog Pool"></label>
+                                            Foldable Dog Pool
+                                        </td>
+                                        <td>27.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expawlorer</td>
+                                        <td>
+                                            <input type="radio" name="product" value="Dog Fence Window"></label>
+                                            Dog Fence Window
+                                        </td>
+                                        <td>30.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lollimeow</td>
+                                        <td>
+                                            <input type="radio" name="product" value="Capsule Pet Travel Backpack"></label>
+                                            Capsule Pet Travel Backpack
+                                        </td>
+                                        <td>59.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drool'd</td>
+                                        <td>
+                                            <input type="radio" name="product" value="Cat Hamster Wheel"></label>
+                                            Cat Hamster Wheel
+                                        </td>
+                                        <td>349.75</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lollimeow</td>
+                                        <td>
+                                            <input type="radio" name="product" value="Sherpa Bubble Cat Carrier Backpack"></label>
+                                            Sherpa Bubble Cat Carrier Backpack
+                                        </td>
+                                        <td>79.99</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label for="quantity">
+                                <strong>Only select between 1 and 50 of any given product</strong>
+                            </label>
+                            <input type="number" name="quantity" min="1" max="50" required value="1"/>
+
+                        </body>
+
+
+
+
+                    <button type="submit">Submit Order</button>
+
+                    </fieldset>
+                </form>
+
+            </article>
+        </section>
+    </main>
+<footer>
+    <p>
+        &copy; 2024 Brody Arbon
+    </p>
+</footer>
+</body>
+</html>

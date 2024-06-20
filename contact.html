@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brody Arbon</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+</head>
+<body>
+    <header>
+        <img src="android-chrome-192x192.png" alt="Logo" />
+        <h1>Brody Arbon</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Contact</h2>
+                <h3>The prompts below, once filled out, will give us valuable input on what we can do better!</h3>
+
+                <form action="/review" method="post">
+                    <fieldset id="required">
+                        <legend>Please input the following...</legend>
+                        <p>
+
+                            <label for="username">
+                                First and Last name here:
+
+                                <input type="text"
+                                       name="username"
+                                       size="25"
+                                       maxlength="75"
+                                       required=""
+                                       placeholder="John Doe"
+                                       autofocus="" />
+
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="useremail">
+                                Email here:
+
+                                <input type="email"
+                                       name="useremail"
+                                       required=""
+                                       placeholder="example123@html.org" />
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="usermessage">
+                                Message here:
+
+                                <textarea name="usermessage"
+                                          required=""
+                                          maxlength="500"
+                                          minlength="3"
+                                          placeholder="Put message here"></textarea>
+
+                            </label>
+                        </p>
+
+
+
+                    </fieldset>
+
+
+
+
+                    <fieldset>
+                        <legend>These questions are not necessary, but they will help improve the user experience!</legend>
+                        <p>
+
+                            <label for="dropdown">
+                                Who are you?
+
+                                <select name="dropdown">
+                                    <option value="Teaching Assistant" selected="">Teaching Assistant</option>
+                                    <option value="Professor">Professor</option>
+                                    <option value="Prospective Employer">Prospective Employer</option>
+                                    <option value="profession not on the list of jobs">Other</option>
+                                </select>
+
+
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="dropdown">
+                                Are you from the United States?
+
+                                <label for="yes">
+                                    <input type="radio" name="fromUsa" id="yes" value="are">
+                                    Yes
+                                </label>
+                                <label for="no">
+                                    <input type="radio" name="fromUsa" id="no" value="are not">
+                                    No
+                                </label>
+                            </label>
+                        </p>
+
+
+
+                        <legend>Select the webpages below that gave you issues, if any.</legend>
+
+
+                        <p>
+                            <label for="home">
+                                Home:
+
+                                <input name="pageCheck"
+                                       type="checkbox"
+                                       value="Home" />
+
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="contact">
+                                Contact:
+
+                                <input name="pageCheck"
+                                       type="checkbox"
+                                       value="Contact" />
+
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="gallery">
+                                Gallery:
+
+                                <input name="pageCheck"
+                                       type="checkbox"
+                                       value="Gallery" />
+
+                            </label>
+                        </p>
+
+                        <button type="submit">Submit Review</button>
+
+                    </fieldset>
+                </form>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2024 Brody Arbon
+        </p>
+    </footer>
+</body>
+</html>
