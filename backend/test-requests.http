@@ -1,0 +1,84 @@
+### CREATE five documents.
+POST http://localhost:3000/renovations HTTP/1.1
+content-type: application/json
+
+{
+    "timeTaken": 1, 
+    "givenDate": "2024-02-3", 
+    "constructionType":  "electrical"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/renovations HTTP/1.1
+content-type: application/json
+
+{
+    "timeTaken": 6, 
+    "givenDate": "2024-02-3", 
+    "constructionType":  "electrical"
+}
+
+### CREATE 3
+POST http://localhost:3000/renovations HTTP/1.1
+content-type: application/json
+
+{
+    "timeTaken": 4, 
+    "givenDate": "2024-09-4", 
+    "constructionType":  "roofing"
+}
+
+### CREATE 4
+POST http://localhost:3000/renovations HTTP/1.1
+content-type: application/json
+
+{
+    "timeTaken": 10, 
+    "givenDate": "2023", 
+    "constructionType":  "framing",
+    "details": "framing for the lower garage" 
+}
+
+### CREATE 5
+POST http://localhost:3000/renovations HTTP/1.1
+content-type: application/json
+
+{
+    "timeTaken": 1, 
+    "givenDate": "2024/04", 
+    "constructionType":  "insulation",
+    "details": "computer room ceiling" 
+}
+
+### RETRIEVE all documents.
+GET http://localhost:3000/renovations HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/renovations/6652a142e8fb784bd6795f42 HTTP/1.1
+
+
+### UPDATE one document's date, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3000/renovations/6652a142e8fb784bd6795f42 HTTP/1.1
+content-type: application/json
+
+{
+    "timeTaken": 4, 
+    "givenDate": "2024-02-7", 
+    "constructionType":  "insulation",
+    "details": "insulation for the computer room" 
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/renovations/6652a142e8fb784bd6795f42 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/renovations HTTP/1.1
+

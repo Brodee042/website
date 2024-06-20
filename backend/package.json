@@ -1,0 +1,20 @@
+{
+  "name": "construction-backend",
+  "version": "2023",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon construction-controller.mjs"
+  },
+  "author": "Brody Arbon",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^3.0.1",
+    "react-icons": "^5.2.1",
+    "rest": "^2.0.0"
+  }
+}
